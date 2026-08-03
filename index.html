@@ -188,8 +188,10 @@
   .on-light{background:var(--porcelain);color:var(--ink)}
   .sec-head{max-width:720px}
   .sec-head h2{font-size:clamp(2.1rem,1rem + 3vw,3.5rem)}
-  .sec-head.centered{margin:0 auto;text-align:center}
-  .sec-head.centered .kicker{justify-content:center}
+  /* "sec-centered", not "centered": GHL's builder CSS defines .centered{display:flex;…} and
+     hijacks the two centered section headers when this page is embedded there */
+  .sec-head.sec-centered{margin:0 auto;text-align:center}
+  .sec-head.sec-centered .kicker{justify-content:center}
 
   /* ---------- 01 what is EBOO: split with the moving portrait pair ---------- */
   .what-grid{display:grid;grid-template-columns:7fr 5fr;gap:clamp(2.2rem,5vw,4.6rem);align-items:start}
@@ -725,7 +727,7 @@
   <!-- ================= 03 GOALS OVER THE BRIDGE ================= -->
   <section class="sec scenic" id="goals" aria-labelledby="h-goals">
     <div class="wrap">
-      <div class="sec-head centered">
+      <div class="sec-head sec-centered">
         <p class="kicker reveal"><span class="idx">03</span>The goals</p>
         <!-- SWAP: goals headline + lede -->
         <h2 class="reveal" id="h-goals" style="--d:.08s">What clients come&nbsp;pursuing.</h2>
@@ -847,7 +849,7 @@
   <!-- ================= 06 TEAM + OFFER (the light band) ================= -->
   <section class="sec on-light" id="team" aria-labelledby="h-team">
     <div class="wrap">
-      <div class="sec-head centered">
+      <div class="sec-head sec-centered">
         <p class="kicker reveal"><span class="idx">06</span>Physician-led</p>
         <!-- SWAP: team headline + lede -->
         <h2 class="reveal" id="h-team" style="--d:.08s">The team behind the&nbsp;protocol.</h2>
