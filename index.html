@@ -455,14 +455,11 @@
     .hero-cap{display:none}
     /* mobile pass 2026-08-02: phone-only layout fixes; desktop untouched */
     .loop-box{display:none}
-    .what-media{max-width:none}
-    .w-main.slot{width:100%}
-    .w-over.slot{position:relative;right:auto;bottom:auto;width:72%;margin:1rem 0 0 auto}
     .step{display:grid;grid-template-columns:1fr 94px;grid-template-rows:auto auto auto;gap:.5rem 1rem;padding:1.45rem 0}
     .step p.step-no{grid-area:1/1/2/2;font-size:1.1rem}
     .step h3{grid-area:2/1/3/2}
     .step p{grid-area:3/1/4/2;font-size:.9rem}
-    .step .plate{grid-area:1/2/4/3;width:94px;align-self:start;justify-self:end}
+    .step .plate{grid-area:1/2/4/3;width:94px;align-self:center;justify-self:end}
     .chip strong{font-size:1.05rem}
     .fit-grid{grid-template-columns:1fr 1fr;gap:.7rem}
     .fit-card{padding:1.2rem 1rem 1.1rem}
@@ -472,6 +469,24 @@
     .film{height:clamp(300px,52vh,430px)}
     .g-reviews iframe{min-height:0;height:640px !important}
     .top .btn{padding:.7rem .95rem;font-size:.6rem;letter-spacing:.16em;white-space:nowrap}
+    .hero{min-height:0}
+    .hero-core{padding:3.9rem 0 3rem}
+    .sec{padding:46px 0}
+    .creds-inner{gap:.28rem 1rem;padding:.8rem 1rem}
+    .creds .caps{font-size:.5rem;letter-spacing:.15em}
+    .creds .tick{width:4px;height:4px}
+    .steps{margin-top:1.5rem}
+    .film-scrim .caps{max-width:44%}
+    .film-scrim .caps.quiet{text-align:right}
+    .rail .vcard{transform:none !important;opacity:1 !important}
+    .book-grid{gap:1rem}
+    .book-copy{display:contents}
+    .book-copy .kicker{order:1}
+    .book-copy h2{order:2}
+    .book-copy .h-lede{order:3}
+    .book-grid .form-card{order:4;margin-top:1.4rem}
+    .book-copy .book-tel{order:5;display:block;width:fit-content;margin:2.2rem auto 0}
+    .book-copy .book-meta{order:6;grid-template-columns:1fr 1fr;gap:1rem;max-width:none;margin-top:.4rem}
   }
 
   /* ---------- reduced motion ---------- */
@@ -669,35 +684,35 @@
         <div class="step reveal">
           <p class="step-no" aria-hidden="true">01</p>
           <h3>Settle in</h3>
-          <p>You take a recliner, not a procedure table. Your nurse checks vitals, answers questions, and places two IV lines, one for each direction of the loop.</p>
+          <p>You take a recliner, not a procedure table. Your nurse checks vitals and places two IV lines, one for each direction of the loop.</p>
           <div class="plate"><img class="ph" src="assets-b/settle-in-prep.jpg" width="1200" height="1200" alt="A nurse settles a client into the recliner, wrapping a warming pack on her arm" loading="lazy" decoding="async"></div>
         </div>
         <!-- SWAP: step row 2 -->
         <div class="step reveal" style="--d:.08s">
           <p class="step-no" aria-hidden="true">02</p>
           <h3>Blood draws out</h3>
-          <p>A gentle pump moves blood from the first line into the circuit. Flow is slow and steady, and your nurse watches it the entire time.</p>
+          <p>A gentle pump draws blood into the circuit. Flow is slow and steady, and your nurse watches it the whole time.</p>
           <div class="plate"><img class="ph" src="assets-b/iv-arm.jpg" width="1100" height="733" alt="A patient's arm with the IV line placed, resting on a blanket" loading="lazy" decoding="async"></div>
         </div>
         <!-- SWAP: step row 3 -->
         <div class="step reveal" style="--d:.16s">
           <p class="step-no" aria-hidden="true">03</p>
           <h3>Through the filter</h3>
-          <p>Blood passes through a semi-permeable dialysis-style membrane. What the membrane catches stays in the circuit rather than going back to you.</p>
+          <p>Blood passes through a semi-permeable, dialysis-style membrane. What it catches stays in the circuit, not with you.</p>
           <div class="plate"><img class="ph" src="assets-b/filter-pole.jpg" width="1100" height="1650" alt="The red filtration column on its pole while blood passes through" loading="lazy" decoding="async"></div>
         </div>
         <!-- SWAP: step row 4 -->
         <div class="step reveal" style="--d:.24s">
           <p class="step-no" aria-hidden="true">04</p>
           <h3>Oxygen meets blood</h3>
-          <p>Fine tubules inside the membrane carry a medical-grade mix of oxygen and ozone. The gas disperses across the membrane as your blood moves past.</p>
+          <p>Fine tubules inside the membrane carry a medical-grade mix of oxygen and ozone, dispersing as your blood moves past.</p>
           <div class="plate"><img class="ph" src="assets-b/canister-bubbling.jpg" width="1200" height="1200" alt="The gas canister bubbling as the oxygen and ozone mixture is prepared" loading="lazy" decoding="async"></div>
         </div>
         <!-- SWAP: step row 5 -->
         <div class="step reveal" style="--d:.32s">
           <p class="step-no" aria-hidden="true">05</p>
           <h3>Back to you</h3>
-          <p>Filtered, oxygenated blood returns through the second line. When the pass is complete, lines come out, and most clients head straight back to their day.</p>
+          <p>Filtered, oxygenated blood returns through the second line. When the pass is done, lines come out and you head back to your day.</p>
           <div class="plate"><img class="ph" src="assets-b/nurse-hands.jpg" width="1023" height="1299" alt="A gloved nurse managing the return line at a patient's hand" loading="lazy" decoding="async"></div>
         </div>
       </div>
