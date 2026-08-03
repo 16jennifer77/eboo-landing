@@ -399,7 +399,8 @@
   /* ---------- google reviews band ---------- */
   .g-reviews{text-align:center}
   .g-reviews .stars{font:600 .62rem/1 var(--body);letter-spacing:.3em;text-transform:uppercase;color:var(--red);margin-bottom:1.5rem}
-  .g-reviews iframe{display:block;width:100%;min-height:360px;border:0;border-radius:2px}
+  /* max-width guards against the widget helper script assigning a fixed pixel width */
+  .g-reviews iframe{display:block;width:100%;max-width:100% !important;min-height:360px;border:0;border-radius:2px}
   .g-reviews .g-link{display:inline-block;margin-top:1.7rem;font:600 .66rem/1 var(--body);letter-spacing:.22em;text-transform:uppercase;color:var(--text);border:1px solid var(--hair-strong);padding:.95rem 1.5rem;text-decoration:none;transition:border-color .3s ease}
   .g-reviews .g-link:hover{border-color:var(--red)}
 
@@ -445,15 +446,32 @@
     .wrap{width:calc(100% - 40px)}
     .goals{grid-template-columns:1fr}
     .team-grid{grid-template-columns:1fr;max-width:420px}
-    .step{grid-template-columns:1fr;gap:.7rem}
-    .step .plate{grid-column:1;grid-row:auto;width:110px}
-    .step h3,.step p{grid-column:1}
+    .f-grid{grid-template-columns:1fr}
     .f-grid{grid-template-columns:1fr}
     .book-meta{grid-template-columns:1fr}
     .top-tel{display:none}
     .hero-ctas .link-quiet{display:none}
     .rail{grid-auto-columns:84vw}
     .hero-cap{display:none}
+    /* mobile pass 2026-08-02: phone-only layout fixes; desktop untouched */
+    .loop-box{display:none}
+    .what-media{max-width:none}
+    .w-main.slot{width:100%}
+    .w-over.slot{position:relative;right:auto;bottom:auto;width:72%;margin:1rem 0 0 auto}
+    .step{display:grid;grid-template-columns:1fr 94px;grid-template-rows:auto auto auto;gap:.5rem 1rem;padding:1.45rem 0}
+    .step p.step-no{grid-area:1/1/2/2;font-size:1.1rem}
+    .step h3{grid-area:2/1/3/2}
+    .step p{grid-area:3/1/4/2;font-size:.9rem}
+    .step .plate{grid-area:1/2/4/3;width:94px;align-self:start;justify-self:end}
+    .chip strong{font-size:1.05rem}
+    .fit-grid{grid-template-columns:1fr 1fr;gap:.7rem}
+    .fit-card{padding:1.2rem 1rem 1.1rem}
+    .fit-card svg{width:22px;height:22px}
+    .fit-card h3{font-size:.9rem;margin-top:.9rem}
+    .fit-card p{font-size:.8rem}
+    .film{height:clamp(300px,52vh,430px)}
+    .g-reviews iframe{min-height:0;height:640px !important}
+    .top .btn{padding:.7rem .95rem;font-size:.6rem;letter-spacing:.16em;white-space:nowrap}
   }
 
   /* ---------- reduced motion ---------- */
@@ -881,7 +899,7 @@
       <!-- Live reviews: the SAME GHL/LeadConnector widget the original EBOO page embeds
            (widget vscbiVBPwkbdhVINAGjF). It pulls the clinic's synced Google reviews and
            updates automatically as new reviews are written. -->
-      <iframe id="msgsndr_reviews" class="reveal" title="Biohackr Health Google reviews" src="https://backend.leadconnectorhq.com/appengine/reviews/get_widget/vscbiVBPwkbdhVINAGjF" frameborder="0" scrolling="no" loading="lazy"></iframe>
+      <iframe id="msgsndr_reviews" class="reveal" title="Biohackr Health Google reviews" src="https://backend.leadconnectorhq.com/appengine/reviews/get_widget/vscbiVBPwkbdhVINAGjF" frameborder="0" scrolling="auto" loading="lazy"></iframe>
       <a class="g-link reveal" style="--d:.14s" href="https://www.google.com/search?q=biohackr+health#lrd=0x808581657af64d31:0x1a2a2a9bc73a82fc,1,,," target="_blank" rel="noopener">Read all our reviews on Google</a>
     </div>
   </section>
