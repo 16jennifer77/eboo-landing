@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<!--
+  BIOHACKR HEALTH : EBOO GOOGLE ADS LANDING PAGE (variation FUSION, 2026-07-31)
+  Client page, not a library master. Lives at clients/biohackr/eboo-google-landing/.
+  Fourth take: Jennifer asked for a combination of variation-marine.html and
+  variation-cinema.html, as a fully new file, leaving both intact. Assets in ./assets-b/.
+
+  P0 SPEC (design-method):
+  Concept sentence: "Marine cinema: the closed loop drawn over a living bloodstream."
+  What it takes from MARINE: brand marine #001b3f ground with one porcelain team+offer band,
+  red/mint accent system, the closed-loop stadium circuit, the Golden Gate + SF skyline
+  tinted backdrops (the live page's own images), ledger how-rows, goals plates, medallion
+  team cards, the veiled-photo booking split, the red offer language.
+  What it takes from CINEMA: the three Veo 3.1 ambient loops (lounge video hero, IV-bag +
+  curtain portrait pair), the bloodstream particle canvas, the scroll-snap rail (used here
+  for the visit steps), the self-drawing 20% ring gauge, Italiana display type.
+  THE FUSED SIGNATURE: one moment, not two. In the How section the bloodstream canvas
+  drifts INSIDE the navy diagram plate while the red closed loop draws itself over it and
+  the five station dots light in path order. Reduced motion: static wash + completed loop.
+  Fonts: Italiana (display) + Inter (body). Radius stance: 0. Sentence case. Uppercase kickers.
+  Layouts in order (no two adjacent alike): full-bleed video hero with left copy / porcelain
+  creds strip / editorial 7-5 split with the moving portrait pair / loop-over-bloodstream
+  plate + 5 ledger rows / goals plates over the bridge / who split + honesty card / ken-burns
+  film band / visit scroll-snap rail / quote over the skyline / porcelain team medallions +
+  offer card with ring gauge / veiled booking split + form / footer. No FAQ (operator removes
+  them).
+  Compliance: same fence as the siblings. Mechanism-education framing only, no disease
+  claims, no toxin-removal efficacy claims, no invented statistics, FDA wellness disclaimer.
+  AI clips contain no people, no blood, no legible text. No em dashes. No exclamation points.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SWAP: page title (match the ad group's search intent) -->
+<title>EBOO Treatment San Francisco and Palo Alto | Biohackr Health</title>
+<!-- SWAP: meta description, 150 to 160 characters -->
+<meta name="description" content="EBOO blood filtration with medical-grade ozone and oxygen at Biohackr Health. Physician-supervised, about one hour. Free consult, 20% off your first treatment.">
+<meta name="theme-color" content="#001b3f">
+<link rel="icon" type="image/png" href="assets-b/favicon.png">
+<link rel="apple-touch-icon" href="assets-b/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* FUSION : marine cinema. Brand marine ground, Italiana display, living loop.
+     Every moving feature pauses offscreen, in hidden tabs, and under reduced motion. */
+
+  /* SWAP: brand palette (edit these tokens only) */
+  :root{
+    --marine:#001b3f;
+    --marine-2:#04234c;
+    --marine-deep:#001228;
+    --red:#e01919;
+    --red-deep:#b31212;
+    --red-bright:#ff5f52;
+    --mint:#9cd3ca;
+    --porcelain:#f3f5f9;
+    --porcelain-2:#ffffff;
+    --text:#e9edf4;
+    --soft:rgba(233,237,244,.68);
+    --dim:rgba(233,237,244,.46);
+    --ink:#0e2447;
+    --ink-soft:#3c527a;
+    --hair:rgba(233,237,244,.16);
+    --hair-strong:rgba(233,237,244,.26);
+    --hair-ink:rgba(14,36,71,.18);
+    --wash:rgba(0,27,63,.24);
+    --disp:'Prata',Georgia,serif;
+    --body:'Inter','Helvetica Neue',Arial,sans-serif;
+    --ease:cubic-bezier(.17,.67,.3,1);
+    --header-h:78px;
+  }
+
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  html,body{overflow-x:clip}
+  body{
+    background:var(--marine);color:var(--text);
+    font-family:var(--body);font-size:1rem;line-height:1.7;
+    font-variant-numeric:tabular-nums;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  }
+  img,video{display:block;max-width:100%}
+  img{height:auto}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--red);color:#fff}
+  :focus-visible{outline:2px solid var(--red-bright);outline-offset:3px}
+  section[id]{scroll-margin-top:var(--header-h)}
+  body.no-scroll{overflow:hidden}
+
+  .skip-link{position:absolute;left:-999px;top:0;z-index:300;background:var(--red);color:#fff;
+    padding:.9rem 1.4rem;font:600 .78rem/1 var(--body);letter-spacing:.14em;text-transform:uppercase}
+  .skip-link:focus{left:0}
+
+  .wrap{width:min(1160px,calc(100% - 52px));margin:0 auto}
+
+  /* ---------- primitives ---------- */
+  .kicker{display:inline-flex;align-items:center;gap:12px;margin-bottom:18px;
+    font:600 .68rem/1 var(--body);letter-spacing:.24em;text-transform:uppercase;color:var(--red-bright)}
+  .kicker::before{content:"";width:26px;height:2px;background:var(--red)}
+  .kicker .idx{color:var(--mint);letter-spacing:.18em}
+  .on-light .kicker{color:var(--red-deep)}
+  .on-light .kicker .idx{color:var(--ink-soft)}
+  h1,h2,h3{font-weight:400}
+  h1,h2{font-family:var(--disp);letter-spacing:.005em;line-height:1.08}
+  .h-lede{margin-top:1.15rem;max-width:62ch;color:var(--soft);font-size:1.02rem;line-height:1.75}
+  .on-light .h-lede{color:var(--ink-soft)}
+  .caps{font:600 .68rem/1.5 var(--body);letter-spacing:.22em;text-transform:uppercase}
+
+  .btn{display:inline-block;padding:1.02rem 2.1rem;background:var(--red);color:#fff;border:1px solid var(--red);
+    font:600 .74rem/1 var(--body);letter-spacing:.18em;text-transform:uppercase;cursor:pointer;
+    transition:background .25s ease,border-color .25s ease,transform .25s var(--ease)}
+  .btn:hover{background:var(--red-deep);border-color:var(--red-deep);transform:translateY(-2px)}
+  .btn:active{transform:translateY(-1px)}
+  .btn-ghost{background:transparent;border:1px solid var(--hair-strong);color:var(--text)}
+  .btn-ghost:hover{background:rgba(233,237,244,.06);border-color:var(--text);transform:translateY(-2px)}
+  .link-quiet{display:inline-block;font:600 .72rem/1 var(--body);letter-spacing:.18em;text-transform:uppercase;
+    color:var(--soft);border-bottom:1px solid var(--hair-strong);padding-bottom:.42rem;transition:color .2s ease,border-color .2s ease}
+  .link-quiet:hover{color:var(--text);border-color:var(--red-bright)}
+
+  .js .reveal{transform:translateY(20px);transition:transform .85s var(--ease) var(--d,0s)}
+  .js .reveal.in{transform:none}
+
+  .ph{filter:saturate(.82) contrast(1.06) brightness(.92)}
+  .plate{position:relative;overflow:hidden;background:var(--marine-2)}
+  .plate::after{content:"";position:absolute;inset:0;background:var(--wash);pointer-events:none}
+  @keyframes kenburns{0%{transform:scale(1.03)}100%{transform:scale(1.12) translate3d(-1.5%,-1%,0)}}
+  .kb{animation:kenburns 30s ease-in-out infinite alternate;transform-origin:50% 40%;will-change:transform}
+
+  .slot{position:relative;overflow:hidden;background:var(--marine-2)}
+  .slot video{position:absolute;inset:0;z-index:2;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s ease}
+  .slot video[hidden]{display:none}
+  .slot.video-live video{opacity:1}
+  .slot > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+  /* SWAP: scenic backdrops (the live page's tinted Bay Area photos, kept under marine washes) */
+  .scenic{position:relative}
+  .scenic::before{content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg,rgba(0,27,63,.86),rgba(0,27,63,.62) 46%,rgba(0,27,63,.9)),
+    url("assets-b/golden-gate-tinted.jpg") center 28%/cover no-repeat}
+  .scenic-city::before{background:linear-gradient(180deg,rgba(0,27,63,.8),rgba(0,27,63,.58) 50%,rgba(0,27,63,.84)),
+    url("assets-b/sf-skyline-tinted.jpg") center 34%/cover no-repeat}
+  .scenic>.wrap{position:relative;z-index:1}
+
+  /* ---------- header ---------- */
+  .top{position:sticky;top:0;z-index:120}
+  .top::before{content:"";position:absolute;inset:0;background:rgba(0,18,40,.94);
+    -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--hair);opacity:0;transition:opacity .5s ease}
+  .top.scrolled::before{opacity:1}
+  .top-inner{position:relative;display:flex;align-items:center;justify-content:space-between;gap:1.6rem;
+    height:var(--header-h);padding:0 clamp(1.2rem,3.4vw,2.6rem)}
+  .logo img{width:clamp(150px,16vw,196px);height:auto}
+  .top-links{display:flex;gap:1.9rem}
+  .top-links a{font:600 .66rem/1 var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--soft);
+    padding:.5rem 0;border-bottom:1px solid transparent;transition:color .2s ease,border-color .2s ease}
+  .top-links a:hover{color:var(--text);border-color:var(--red-bright)}
+  .top-right{display:flex;align-items:center;gap:1.4rem}
+  .top-tel{font:600 .78rem/1 var(--body);letter-spacing:.08em;color:var(--soft);transition:color .2s ease}
+  .top-tel:hover{color:var(--text)}
+  .top .btn{padding:.78rem 1.35rem;font-size:.64rem}
+
+  /* ---------- hero: full-bleed AI film, left copy ---------- */
+  .hero{position:relative;min-height:min(90svh,900px);display:flex;align-items:center;overflow:hidden}
+  .hero .slot{position:absolute;inset:0}
+  .hero-veil{position:absolute;inset:0;z-index:3;
+    background:linear-gradient(100deg,rgba(0,18,40,.93) 26%,rgba(0,27,63,.66) 58%,rgba(0,27,63,.3))}
+  .hero-core{position:relative;z-index:4;width:min(1160px,calc(100% - 52px));margin:0 auto;
+    padding:clamp(5.4rem,12vh,8rem) 0}
+  .hero h1{font-size:clamp(2.7rem,1.5rem + 4.6vw,4.7rem);max-width:13ch}
+  .hero-sub{margin-top:1.5rem;max-width:52ch;font-size:1.05rem;line-height:1.78;color:var(--soft)}
+  .hero-ctas{display:flex;align-items:center;gap:1.6rem;flex-wrap:wrap;margin-top:2.4rem}
+  .hero-proof{display:flex;gap:.8rem 1.8rem;flex-wrap:wrap;margin-top:2.5rem;color:var(--dim);
+    font:600 .64rem/1.7 var(--body);letter-spacing:.2em;text-transform:uppercase}
+  .hero-proof b{color:var(--mint);font-weight:600}
+
+  /* ---------- credentials strip (light) ---------- */
+  .creds{background:var(--porcelain);color:var(--ink);border-top:1px solid var(--hair-ink)}
+  .creds-inner{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.9rem 2.4rem;
+    padding:1.35rem clamp(1.2rem,3vw,2.4rem);text-align:center}
+  .creds .caps{font-size:.66rem;letter-spacing:.24em;color:var(--ink)}
+  .creds .tick{width:5px;height:5px;background:var(--red);transform:rotate(45deg);flex:none}
+
+  /* ---------- shared section rhythm ---------- */
+  .sec{padding:clamp(74px,9.5vw,120px) 0}
+  .sec.raised{background:var(--marine-2)}
+  .on-light{background:var(--porcelain);color:var(--ink)}
+  .sec-head{max-width:720px}
+  .sec-head h2{font-size:clamp(2.1rem,1rem + 3vw,3.5rem)}
+  .sec-head.centered{margin:0 auto;text-align:center}
+  .sec-head.centered .kicker{justify-content:center}
+
+  /* ---------- 01 what is EBOO: split with the moving portrait pair ---------- */
+  .what-grid{display:grid;grid-template-columns:7fr 5fr;gap:clamp(2.2rem,5vw,4.6rem);align-items:start}
+  .what-copy p.body{margin-top:1.15rem;max-width:58ch;color:var(--soft)}
+  .what-copy p.body strong{color:var(--text);font-weight:600}
+  .spec-chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;margin-top:2.2rem;
+    background:var(--hair);border:1px solid var(--hair)}
+  .chip{background:var(--marine);padding:1.15rem 1.2rem;transition:background .3s ease}
+  .chip:hover{background:var(--marine-2)}
+  .chip .caps{color:var(--mint);font-size:.58rem;letter-spacing:.24em}
+  .chip strong{display:block;margin-top:.4rem;font:400 1.2rem/1.3 var(--disp);color:var(--text)}
+  .what-media{position:relative;margin:0}
+  .w-main.slot{width:80%;border:1px solid var(--hair)}
+  .w-main .frame-int{aspect-ratio:9/16}
+  .w-over.slot{position:absolute;right:0;bottom:-9%;width:46%;border:1px solid var(--hair-strong);
+    box-shadow:0 28px 64px rgba(0,10,24,.6)}
+  .w-over .frame-int{aspect-ratio:9/16}
+  .frame-int{position:relative;width:100%}
+
+  /* ---------- 02 how: the living loop + ledger rows ---------- */
+  .loop-box{position:relative;margin:clamp(2.4rem,5vw,3.8rem) 0 clamp(1.6rem,3vw,2.6rem);border:1px solid var(--hair);
+    background:rgba(0,18,40,.5);padding:clamp(1.2rem,3vw,2.2rem) clamp(1rem,2.6vw,2rem) clamp(.9rem,2vw,1.4rem);
+    overflow:hidden}
+  .loop-cells{position:absolute;inset:0;width:100%;height:100%}
+  .loop-svg{position:relative;z-index:2;width:100%;height:auto;display:block}
+  .loop-path{stroke:var(--red);stroke-width:2.6;fill:none;stroke-linecap:round}
+  .js .loop-path{stroke-dasharray:1;stroke-dashoffset:1}
+  .js .loop-svg.in .loop-path{stroke-dashoffset:0;transition:stroke-dashoffset 3.2s ease .15s}
+  .loop-dot{fill:var(--mint)}
+  .js .loop-svg .loop-dot{opacity:0;transition:opacity .45s ease}
+  .js .loop-svg.in .loop-dot{opacity:1}
+  .js .loop-svg.in .loop-dot:nth-of-type(1){transition-delay:.25s}
+  .js .loop-svg.in .loop-dot:nth-of-type(2){transition-delay:.75s}
+  .js .loop-svg.in .loop-dot:nth-of-type(3){transition-delay:1.55s}
+  .js .loop-svg.in .loop-dot:nth-of-type(4){transition-delay:2.05s}
+  .js .loop-svg.in .loop-dot:nth-of-type(5){transition-delay:2.85s}
+  .loop-label{font:600 11px var(--body);letter-spacing:.2em;fill:rgba(233,237,244,.6)}
+  .loop-tag{font:600 10px var(--body);letter-spacing:.26em;fill:var(--mint)}
+  .loop-center{font:600 12px var(--body);letter-spacing:.32em;fill:rgba(233,237,244,.66)}
+  .loop-center-sub{font:600 10px var(--body);letter-spacing:.26em;fill:rgba(156,211,202,.8)}
+  .loop-aux{stroke:rgba(156,211,202,.55);stroke-width:1.6;fill:none;stroke-linecap:round}
+  .steps{border-top:1px solid var(--hair)}
+  .step{display:grid;grid-template-columns:84px 1.05fr 1.6fr 128px;gap:clamp(1.2rem,3vw,2.6rem);
+    align-items:center;padding:clamp(1.5rem,3vw,2.1rem) .2rem;border-bottom:1px solid var(--hair);
+    transition:background .3s ease}
+  .step:hover{background:rgba(233,237,244,.03)}
+  .step-no{font:400 1.9rem/1 var(--disp);color:var(--red-bright)}
+  .step-no::after{content:"";display:block;width:26px;height:1px;margin-top:.5rem;background:var(--hair-strong)}
+  .step h3{font:600 1.02rem/1.4 var(--body);letter-spacing:.01em;color:var(--text)}
+  .step p{font-size:.94rem;line-height:1.7;color:var(--soft)}
+  .step .plate{width:128px}
+  .step .plate img{width:100%;aspect-ratio:1/1;object-fit:cover;transition:transform 1.2s var(--ease)}
+  .step:hover .plate img{transform:scale(1.05)}
+  .how-note{margin-top:1.6rem;font-size:.8rem;color:var(--dim);max-width:70ch;margin-left:auto;margin-right:auto;text-align:center}
+
+  /* ---------- 03 goals over the bridge ---------- */
+  .goals{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hair);
+    border:1px solid var(--hair);margin-top:clamp(2.4rem,5vw,3.6rem)}
+  .goal{position:relative;background:var(--marine);padding:1.7rem 1.4rem 1.6rem;transition:background .3s ease}
+  .goal:hover{background:var(--marine-2)}
+  .goal::after{content:"";position:absolute;left:1.4rem;right:1.4rem;top:0;height:2px;background:var(--red);
+    transform:scaleX(0);transform-origin:left center;transition:transform .45s var(--ease)}
+  .goal:hover::after{transform:scaleX(1)}
+  .goal .caps{color:var(--mint);font-size:.56rem;letter-spacing:.26em}
+  .goal h3{margin-top:.85rem;font:400 1.34rem/1.3 var(--disp);color:var(--text)}
+  .goal p{margin-top:.6rem;font-size:.88rem;line-height:1.65;color:var(--soft)}
+  .goals-note{margin-top:1.5rem;font-size:.8rem;color:var(--dim);max-width:74ch;margin-left:auto;margin-right:auto;text-align:center}
+
+  /* ---------- 04 who + honesty ---------- */
+  .who-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2.4rem,5.5vw,5rem);align-items:start}
+  .who-list{margin-top:2rem;border-top:1px solid var(--hair)}
+  .who-row{display:grid;grid-template-columns:56px 1fr;gap:1.3rem;align-items:baseline;
+    padding:1.35rem .2rem;border-bottom:1px solid var(--hair)}
+  .who-row .caps{color:var(--red-bright);font-size:.62rem}
+  .who-row h3{font:600 1rem/1.45 var(--body);color:var(--text)}
+  .who-row p{margin-top:.35rem;font-size:.92rem;line-height:1.68;color:var(--soft)}
+  .honesty{position:relative;border:1px solid var(--hair-strong);background:rgba(0,18,40,.55);
+    padding:clamp(1.8rem,3.4vw,2.6rem)}
+  .honesty::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--mint)}
+  .honesty .caps{color:var(--mint)}
+  .honesty h3{margin-top:1rem;font:400 1.9rem/1.15 var(--disp);color:var(--text)}
+  .honesty ul{list-style:none;margin-top:1.3rem}
+  .honesty li{position:relative;padding:.72rem 0 .72rem 1.6rem;font-size:.93rem;line-height:1.65;
+    color:var(--soft);border-top:1px solid var(--hair)}
+  .honesty li:first-child{border-top:0}
+  .honesty li::before{content:"";position:absolute;left:2px;top:1.32em;width:9px;height:1px;background:var(--mint)}
+  .honesty .foot{margin-top:1.4rem;font-size:.8rem;color:var(--dim)}
+
+  /* ---------- film band ---------- */
+  .film{position:relative;height:clamp(380px,56vh,600px);overflow:hidden}
+  .film > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 0%}
+  .film-scrim{position:absolute;inset:0;z-index:2;display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;
+    padding:clamp(1.4rem,3.4vw,2.6rem);
+    background:linear-gradient(180deg,rgba(0,27,63,.55),rgba(0,27,63,.14) 44%,rgba(0,27,63,.66))}
+  .film-scrim .caps{color:var(--text);font-size:.64rem;letter-spacing:.3em}
+  .film-scrim .caps.quiet{color:var(--soft)}
+
+  /* ---------- 05 visit rail ---------- */
+  .visit-head{display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;margin-bottom:clamp(2rem,4vw,3rem)}
+  .visit-head h2{font-size:clamp(2.1rem,1rem + 3vw,3.5rem);max-width:16ch}
+  .rail-nav{display:flex;gap:.7rem;flex:none}
+  .rail-btn{width:46px;height:46px;display:grid;place-items:center;background:transparent;color:var(--text);
+    border:1px solid var(--hair-strong);cursor:pointer;transition:border-color .2s ease,background .2s ease,transform .2s var(--ease)}
+  .rail-btn:hover{border-color:var(--red-bright);background:rgba(224,25,25,.08);transform:translateY(-2px)}
+  .rail-btn svg{width:16px;height:16px}
+  .rail{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(262px,27vw,340px);gap:clamp(1rem,2vw,1.6rem);
+    overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 4px 18px;scrollbar-width:thin;
+    scrollbar-color:rgba(224,25,25,.5) rgba(233,237,244,.06)}
+  .rail::-webkit-scrollbar{height:6px}
+  .rail::-webkit-scrollbar-track{background:rgba(233,237,244,.06)}
+  .rail::-webkit-scrollbar-thumb{background:rgba(224,25,25,.5)}
+  .vcard{scroll-snap-align:start;border:1px solid var(--hair);background:rgba(0,18,40,.4);
+    display:flex;flex-direction:column;transition:border-color .3s ease,transform .3s var(--ease)}
+  .vcard:hover{border-color:rgba(224,25,25,.55);transform:translateY(-4px)}
+  .vcard .plate img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform 1.2s var(--ease)}
+  .vcard:hover .plate img{transform:scale(1.05)}
+  .vcard-body{padding:1.3rem 1.3rem 1.4rem}
+  .vcard .caps{color:var(--red-bright);font-size:.58rem}
+  .vcard h3{margin-top:.55rem;font:400 1.4rem/1.25 var(--disp);color:var(--text)}
+  .vcard p{margin-top:.5rem;font-size:.9rem;line-height:1.66;color:var(--soft)}
+  .visit-note{margin-top:1.4rem;font-size:.8rem;color:var(--dim)}
+
+  /* ---------- quote over the skyline ---------- */
+  .quote-sec{text-align:center}
+  .quote-mark{width:34px;height:34px;margin:0 auto 1.4rem;color:var(--red-bright)}
+  .quote-sec blockquote p{font:400 clamp(1.7rem,1rem + 2.2vw,2.7rem)/1.38 var(--disp);
+    max-width:23em;margin:0 auto;color:var(--text)}
+  .quote-sec cite{display:block;margin-top:1.8rem;font:600 .64rem/1.6 var(--body);
+    letter-spacing:.26em;text-transform:uppercase;font-style:normal;color:var(--dim)}
+
+  /* ---------- porcelain band: team + offer with gauge ---------- */
+  .team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.4rem,3vw,2.4rem);
+    margin-top:clamp(2.4rem,5vw,3.6rem)}
+  .member{background:var(--porcelain-2);border:1px solid var(--hair-ink);text-align:center;
+    padding:clamp(1.6rem,3vw,2.2rem) clamp(1.2rem,2.4vw,1.8rem);
+    transition:transform .35s var(--ease),border-color .35s ease}
+  .member:hover{transform:translateY(-4px);border-color:rgba(14,36,71,.34)}
+  .medal{width:min(64%,220px);margin:0 auto;padding:9px;border:1px solid var(--hair-ink);border-radius:50%}
+  .member .plate{border-radius:50%;background:#dfe5ee}
+  .member .plate::after{background:rgba(0,27,63,.08);border-radius:50%}
+  .member .plate img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 22%}
+  .member h3{margin-top:1.3rem;font:400 1.5rem/1.2 var(--disp);color:var(--ink)}
+  .member .caps{display:block;margin-top:.5rem;color:var(--red-deep);font-size:.6rem}
+  .member p{margin-top:.75rem;font-size:.9rem;line-height:1.68;color:var(--ink-soft)}
+
+  .offer{margin-top:clamp(3.2rem,6vw,4.6rem);border-top:1px solid var(--hair-ink);
+    padding-top:clamp(2.6rem,5vw,3.6rem)}
+  .offer-card{display:grid;grid-template-columns:1.25fr .75fr;background:var(--marine);color:var(--text);
+    border:1px solid var(--marine)}
+  .offer-main{padding:clamp(2rem,4vw,3.2rem)}
+  .offer-main h3{font:400 clamp(1.9rem,1rem + 2vw,2.8rem)/1.12 var(--disp)}
+  .offer-main .h-lede{color:var(--soft)}
+  .offer-list{list-style:none;margin-top:1.6rem}
+  .offer-list li{position:relative;padding:.68rem 0 .68rem 1.7rem;font-size:.95rem;color:var(--soft);
+    border-top:1px solid var(--hair)}
+  .offer-list li:first-child{border-top:0}
+  .offer-list li::before{content:"";position:absolute;left:2px;top:1.24em;width:10px;height:10px;
+    border:1px solid var(--red-bright);transform:rotate(45deg)}
+  .offer-aside{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;
+    padding:clamp(2rem,4vw,3rem);background:var(--porcelain-2);color:var(--ink);text-align:center;
+    border-left:1px solid var(--hair-ink)}
+  .gauge{width:min(250px,64vw);height:auto}
+  .gauge .track{stroke:rgba(14,36,71,.14);stroke-width:6;fill:none}
+  .gauge .fill{stroke:var(--red);stroke-width:6;fill:none;transform:rotate(-90deg);transform-origin:50% 50%}
+  .js .gauge .fill{stroke-dasharray:1;stroke-dashoffset:1}
+  .js .gauge.in .fill{stroke-dashoffset:.8;transition:stroke-dashoffset 1.8s var(--ease) .2s}
+  .gauge .g-big{font:400 62px var(--disp);fill:var(--ink)}
+  .gauge .g-caps{font:600 11px var(--body);letter-spacing:.28em;fill:var(--ink-soft)}
+  .offer-aside .btn{width:100%}
+  .offer-aside .fine{font-size:.72rem;color:var(--ink-soft)}
+
+  /* ---------- booking finale ---------- */
+  .book{position:relative;overflow:hidden}
+  .book > .bg{position:absolute;inset:0}
+  .book > .bg img{width:100%;height:100%;object-fit:cover}
+  .book > .bg::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(100deg,rgba(0,18,40,.96) 34%,rgba(0,27,63,.86) 60%,rgba(0,27,63,.7))}
+  .book-grid{position:relative;z-index:2;display:grid;grid-template-columns:1fr .95fr;
+    gap:clamp(2.4rem,5.5vw,5rem);align-items:center;padding:clamp(80px,10vw,128px) 0 clamp(40px,5.5vw,64px)}
+  .book-copy h2{font-size:clamp(2.1rem,1rem + 3vw,3.5rem)}
+  .book-tel{display:inline-block;margin-top:1.9rem;font:400 1.7rem/1 var(--disp);color:var(--text);
+    border-bottom:1px solid var(--hair-strong);padding-bottom:.4rem;transition:border-color .2s ease}
+  .book-tel:hover{border-color:var(--red-bright)}
+  .book-meta{margin-top:2rem;display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;max-width:520px}
+  .book-meta .caps{color:var(--mint);font-size:.58rem}
+  .book-meta p{margin-top:.45rem;font-size:.88rem;line-height:1.7;color:var(--soft)}
+  .form-card{background:var(--porcelain);color:var(--ink);padding:clamp(1.8rem,3.6vw,2.8rem);
+    border-top:3px solid var(--red)}
+  .form-card h3{font:400 1.9rem/1.15 var(--disp)}
+  .form-card .sub{margin-top:.5rem;font-size:.88rem;color:var(--ink-soft)}
+  .f-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9rem 1rem;margin-top:1.6rem}
+  .f-field{display:flex;flex-direction:column;gap:.4rem}
+  .f-field label{font:600 .6rem/1 var(--body);letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
+  .f-field input,.f-field select{width:100%;padding:.85rem .9rem;border:1px solid var(--hair-ink);
+    background:#fff;color:var(--ink);font:500 .95rem/1.3 var(--body);border-radius:0;
+    transition:border-color .2s ease}
+  .f-field select{appearance:none;-webkit-appearance:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%230e2447' stroke-width='1.6'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:right .9rem center}
+  .f-field input:focus,.f-field select:focus{outline:none;border-color:var(--red)}
+  .form-card .btn{width:100%;margin-top:1.4rem;text-align:center}
+  .f-note{margin-top:1rem;font-size:.74rem;line-height:1.6;color:var(--ink-soft);text-align:center}
+  .f-status{margin-top:.9rem;font:600 .74rem/1.5 var(--body);color:var(--red-deep);text-align:center;display:none}
+  .f-status.show{display:block}
+
+  /* ---------- google reviews band ---------- */
+  .g-reviews{text-align:center}
+  .g-reviews .stars{font:600 .62rem/1 var(--body);letter-spacing:.3em;text-transform:uppercase;color:var(--red);margin-bottom:1.5rem}
+  .g-reviews iframe{display:block;width:100%;min-height:360px;border:0;border-radius:2px}
+  .g-reviews .g-link{display:inline-block;margin-top:1.7rem;font:600 .66rem/1 var(--body);letter-spacing:.22em;text-transform:uppercase;color:var(--text);border:1px solid var(--hair-strong);padding:.95rem 1.5rem;text-decoration:none;transition:border-color .3s ease}
+  .g-reviews .g-link:hover{border-color:var(--red)}
+
+  /* ---------- footer ---------- */
+  .footer{background:var(--marine-deep);color:var(--dim);padding:.6rem 0 1.4rem;
+    border-top:1px solid var(--hair)}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr .9fr;gap:2.4rem}
+  .foot-brand img{width:170px}
+  .foot-brand p{margin-top:1.2rem;font-size:.86rem;line-height:1.75;max-width:30em}
+  .footer h3{font:600 .62rem/1 var(--body);letter-spacing:.3em;text-transform:uppercase;
+    color:var(--mint);margin-bottom:1.1rem}
+  .footer address{font-style:normal;font-size:.88rem;line-height:1.85}
+  .footer address strong{color:var(--soft);font-weight:600}
+  .foot-links a{display:block;padding:.3rem 0;font-size:.86rem;transition:color .2s ease}
+  .foot-links a:hover,.footer address a:hover{color:var(--text)}
+  .foot-legal{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--hair);text-align:center;
+    font-size:.76rem;line-height:1.7}
+  .foot-legal p + p{margin-top:.5rem}
+  .foot-legal .pp-link{color:inherit;text-decoration:none}
+  .foot-legal .pp-link:hover{text-decoration:underline;text-underline-offset:3px}
+  .addr-link{color:inherit;text-decoration:none}
+  .addr-link:hover{text-decoration:underline;text-decoration-color:rgba(233,237,244,.5);text-underline-offset:3px}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:1060px){
+    .goals{grid-template-columns:repeat(2,1fr)}
+    .step{grid-template-columns:64px 1fr 110px;grid-template-rows:auto auto}
+    .step h3{grid-column:2}
+    .step p{grid-column:2;grid-row:2}
+    .step .plate{grid-column:3;grid-row:1/3;width:110px}
+    .foot-grid{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:940px){
+    .top-links{display:none}
+    .what-grid,.who-grid,.book-grid{grid-template-columns:1fr}
+    .what-media{max-width:460px;margin-top:1rem}
+    .offer-card{grid-template-columns:1fr}
+    .offer-aside{border-left:0;border-top:1px solid var(--hair-ink)}
+    .team-grid{grid-template-columns:repeat(2,1fr)}
+    .visit-head{flex-direction:column;align-items:flex-start;gap:1.2rem}
+  }
+  @media (max-width:640px){
+    .wrap{width:calc(100% - 40px)}
+    .goals{grid-template-columns:1fr}
+    .team-grid{grid-template-columns:1fr;max-width:420px}
+    .step{grid-template-columns:1fr;gap:.7rem}
+    .step .plate{grid-column:1;grid-row:auto;width:110px}
+    .step h3,.step p{grid-column:1}
+    .f-grid{grid-template-columns:1fr}
+    .book-meta{grid-template-columns:1fr}
+    .top-tel{display:none}
+    .hero-ctas .link-quiet{display:none}
+    .rail{grid-auto-columns:84vw}
+    .hero-cap{display:none}
+  }
+
+  /* ---------- reduced motion ---------- */
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;
+      transition-duration:.01ms !important;transition-delay:0s !important}
+    .js .reveal{transform:none}
+    .kb{animation:none}
+    .js .loop-path{stroke-dasharray:none;stroke-dashoffset:0}
+    .js .loop-svg .loop-dot{opacity:1}
+    .js .gauge .fill{stroke-dasharray:none;stroke-dashoffset:.8}
+    .loop-cells{display:none}
+  }
+</style>
+</head>
+<body>
+<!--
+  ============================================================
+  SWAP MANIFEST : every editable spot, in page order
+  ============================================================
+  Search the file for "SWAP:" to jump to each item.
+   1. <title> + meta description (head)
+   2. Header: logo, nav links, phone, CTA target
+   3. Hero: AI clip + fallback still, kicker, headline,
+      subheadline, CTAs, proof line
+   4. Credentials strip: four phrases
+   5. What is EBOO: headline, body copy, 4 spec chips,
+      two AI clips + stills
+   6. How it works: headline, lede, loop diagram labels,
+      5 ledger rows (title, copy, thumb), small print
+      (canvas bloodstream is decorative; hidden under
+      reduced motion)
+   7. Goals over the bridge: 8 plates + footnote; backdrop
+      URLs live in the .scenic CSS rules
+   8. Who: headline, intro, 4 rows, honesty card
+   9. Film band: photo + captions
+  10. Visit rail: headline, 4 cards (photo, tag, title, copy)
+  11. Quote over the skyline + attribution
+  12. Team: 3 medallion cards
+  13. Offer card: headline, lede, bullets, gauge labels, CTA
+  14. Booking: headline, copy, phone, locations + hours,
+      form fields, form action, consent line
+  15. Footer: brand line, addresses, contact, legal links,
+      disclaimers
+  VIDEO SLOTS ship live with local mp4s in assets-b/ (AI made,
+  no people, no readable text); the still under each video is
+  the poster and reduced-motion state. The form is UNWIRED
+  (action="#"): point it at the campaign intake webhook before
+  ads run; replace legal href="#" stubs with real URLs.
+  ============================================================
+-->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="top" id="top">
+  <div class="top-inner">
+    <!-- SWAP: logo image -->
+    <a class="logo" href="#top" aria-label="Biohackr Health, back to top">
+      <img src="assets-b/logo-white.png" alt="Biohackr Health" width="720" height="120">
+    </a>
+    <nav class="top-links" aria-label="Primary">
+      <a href="#what">What is EBOO</a>
+      <a href="#how">How it works</a>
+      <a href="#visit">Your visit</a>
+      <a href="#team">Team</a>
+    </nav>
+    <div class="top-right">
+      <!-- SWAP: phone number (also update tel links below) -->
+      <a class="top-tel" href="tel:+16503701588">(650) 370-1588</a>
+      <!-- SWAP: header CTA target -->
+      <a class="btn" href="#book">Book free consult</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO: AI FILM, LEFT COPY ================= -->
+  <section class="hero" aria-labelledby="h-hero">
+    <div class="slot" data-autoplay>
+      <!-- SWAP: hero AI clip. The still below is the poster + reduced-motion state. -->
+      <video src="assets-b/hero-lounge-loop.mp4" muted loop playsinline preload="metadata"></video>
+      <!-- SWAP: hero fallback still -->
+      <img class="ph kb" src="assets-b/hero-lounge-still.jpg" width="1365" height="768" alt="The empty Biohackr Health IV lounge: leather recliners, sheer curtains, brass ring lights" loading="eager" decoding="async">
+    </div>
+    <div class="hero-veil" aria-hidden="true"></div>
+    <div class="hero-core">
+      <!-- SWAP: hero kicker -->
+      <p class="kicker reveal">The EBOO protocol</p>
+      <!-- SWAP: hero headline (keep under 8 words) -->
+      <h1 class="reveal" id="h-hero" style="--d:.08s">Cleanse and oxygenate your&nbsp;blood.</h1>
+      <!-- SWAP: hero subheadline -->
+      <p class="hero-sub reveal" style="--d:.16s">EBOO, also written EBO2, is advanced blood filtration with medical-grade ozone and oxygen. Physician-supervised, nurse-administered, and finished in about one hour at our San Francisco Marina and Palo Alto clinics.</p>
+      <div class="hero-ctas reveal" style="--d:.24s">
+        <!-- SWAP: primary CTA -->
+        <a class="btn" href="#book">Book my free consult</a>
+        <!-- SWAP: secondary link -->
+        <a class="link-quiet" href="#how">See how it works <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <!-- SWAP: hero proof line -->
+      <p class="hero-proof reveal" style="--d:.32s"><span><b>20</b> spots each month</span> <span><b>20%</b> off your first treatment</span></p>
+    </div>
+  </section>
+
+  <!-- ================= CREDENTIALS STRIP ================= -->
+  <section class="creds" aria-label="Credentials">
+    <div class="creds-inner">
+      <!-- SWAP: credential phrases -->
+      <p class="caps">Physician-supervised</p>
+      <span class="tick" aria-hidden="true"></span>
+      <p class="caps">Board-certified MDs, 25+ years in medicine</p>
+      <span class="tick" aria-hidden="true"></span>
+      <p class="caps">Registered nurses at your side</p>
+      <span class="tick" aria-hidden="true"></span>
+      <p class="caps">San Francisco Marina and Palo Alto</p>
+    </div>
+  </section>
+
+  <!-- ================= 01 WHAT IS EBOO ================= -->
+  <section class="sec" id="what" aria-labelledby="h-what">
+    <div class="wrap">
+      <div class="what-grid">
+        <div class="what-copy">
+          <p class="kicker reveal"><span class="idx">01</span>The protocol</p>
+          <div class="sec-head">
+            <!-- SWAP: section headline -->
+            <h2 class="reveal" id="h-what" style="--d:.08s">Your blood, filtered and&nbsp;returned.</h2>
+          </div>
+          <!-- SWAP: what-is body copy -->
+          <p class="body reveal" style="--d:.14s"><strong>EBOO stands for Extracorporeal Blood Oxygenation and Ozonation.</strong> Two IV lines form a closed loop between you and the machine. Blood leaves through one line, passes through a dialysis-style filtration membrane, and returns through the other. Nothing about the loop is rushed, and it stays closed from start to finish.</p>
+          <p class="body reveal" style="--d:.2s">Inside the filter, your blood moves alongside fine membrane tubules carrying a medical-grade mixture of oxygen and ozone. The gas disperses across the membrane as blood passes, and what the membrane catches stays in the circuit. Some clinics call the method ozone dialysis. We simply call it EBOO.</p>
+          <div class="spec-chips reveal" style="--d:.26s">
+            <!-- SWAP: spec chips (4) -->
+            <div class="chip"><span class="caps">Session length</span><strong>About one hour</strong></div>
+            <div class="chip"><span class="caps">Access</span><strong>Two IV lines</strong></div>
+            <div class="chip"><span class="caps">Circuit</span><strong>Closed loop, single-use</strong></div>
+            <div class="chip"><span class="caps">Gas mixture</span><strong>Medical-grade O2 and O3</strong></div>
+          </div>
+        </div>
+        <figure class="what-media reveal" style="--d:.16s">
+          <div class="w-main slot" data-autoplay>
+            <div class="frame-int"></div>
+            <!-- SWAP: AI clip A + fallback still -->
+            <video src="assets-b/blood-lines-loop.mp4" muted loop playsinline preload="metadata"></video>
+            <img class="ph" src="assets-b/blood-lines-still.jpg" width="768" height="1365" alt="Two EBOO lines resting on a charcoal blanket, the outgoing line dark red, the returning line bright red" loading="lazy" decoding="async">
+          </div>
+          <div class="w-over slot" data-autoplay>
+            <div class="frame-int"></div>
+            <!-- SWAP: AI clip B + fallback still -->
+            <video src="assets-b/recliner-room-loop.mp4" muted loop playsinline preload="metadata"></video>
+            <img class="ph" src="assets-b/recliner-room-still.jpg" width="768" height="1365" alt="Two leather recliners beneath glowing DNA art panels in the treatment lounge" loading="lazy" decoding="async">
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 02 HOW: THE LIVING LOOP ================= -->
+  <section class="sec raised" id="how" aria-labelledby="h-how">
+    <div class="wrap">
+      <p class="kicker reveal"><span class="idx">02</span>The hour</p>
+      <div class="sec-head">
+        <!-- SWAP: how-it-works headline + lede -->
+        <h2 class="reveal" id="h-how" style="--d:.08s">Five stations, one closed&nbsp;loop.</h2>
+        <p class="h-lede reveal" style="--d:.16s">The whole treatment happens in the chair, in one continuous pass. Watch the loop, then read it station by station.</p>
+      </div>
+
+      <div class="loop-box reveal" style="--d:.2s">
+        <!-- The living loop: red cells drift while the circuit draws itself and closes
+             where it began. Decorative; every station is duplicated by the rows below. -->
+        <canvas class="loop-cells" aria-hidden="true"></canvas>
+        <svg class="loop-svg" viewBox="0 0 1180 320" aria-hidden="true" focusable="false">
+          <path class="loop-path" pathLength="1" d="M130 150 A 90 90 0 0 1 220 60 L 960 60 A 90 90 0 0 1 1050 150 A 90 90 0 0 1 960 240 L 220 240 A 90 90 0 0 1 130 150 Z"/>
+          <path class="loop-aux" d="M594 53 L607 60 L594 67"/>
+          <path class="loop-aux" d="M607 233 L594 240 L607 247"/>
+          <path class="loop-aux" d="M1031 117 L1052 107 M1038 150 L1062 150 M1031 183 L1052 193" opacity=".7"/>
+          <circle class="loop-dot" cx="130" cy="150" r="5.5"/>
+          <circle class="loop-dot" cx="420" cy="60" r="5.5"/>
+          <circle class="loop-dot" cx="940" cy="60" r="5.5"/>
+          <circle class="loop-dot" cx="940" cy="240" r="5.5"/>
+          <circle class="loop-dot" cx="420" cy="240" r="5.5"/>
+          <text class="loop-tag" x="130" y="112" text-anchor="middle">YOU</text>
+          <text class="loop-label" x="22" y="155" text-anchor="start">01 SETTLE</text>
+          <text class="loop-label" x="420" y="38" text-anchor="middle">02 DRAW</text>
+          <text class="loop-label" x="940" y="38" text-anchor="middle">03 FILTER</text>
+          <text class="loop-label" x="940" y="278" text-anchor="middle">04 OXYGENATE</text>
+          <text class="loop-label" x="420" y="278" text-anchor="middle">05 RETURN</text>
+          <text class="loop-center" x="590" y="143" text-anchor="middle">ONE CLOSED LOOP</text>
+          <text class="loop-center-sub" x="590" y="172" text-anchor="middle">ABOUT ONE HOUR, START TO FINISH</text>
+        </svg>
+      </div>
+
+      <div class="steps">
+        <!-- SWAP: step row 1 -->
+        <div class="step reveal">
+          <p class="step-no" aria-hidden="true">01</p>
+          <h3>Settle in</h3>
+          <p>You take a recliner, not a procedure table. Your nurse checks vitals, answers questions, and places two IV lines, one for each direction of the loop.</p>
+          <div class="plate"><img class="ph" src="assets-b/settle-in-prep.jpg" width="1200" height="1200" alt="A nurse settles a client into the recliner, wrapping a warming pack on her arm" loading="lazy" decoding="async"></div>
+        </div>
+        <!-- SWAP: step row 2 -->
+        <div class="step reveal" style="--d:.08s">
+          <p class="step-no" aria-hidden="true">02</p>
+          <h3>Blood draws out</h3>
+          <p>A gentle pump moves blood from the first line into the circuit. Flow is slow and steady, and your nurse watches it the entire time.</p>
+          <div class="plate"><img class="ph" src="assets-b/iv-arm.jpg" width="1100" height="733" alt="A patient's arm with the IV line placed, resting on a blanket" loading="lazy" decoding="async"></div>
+        </div>
+        <!-- SWAP: step row 3 -->
+        <div class="step reveal" style="--d:.16s">
+          <p class="step-no" aria-hidden="true">03</p>
+          <h3>Through the filter</h3>
+          <p>Blood passes through a semi-permeable dialysis-style membrane. What the membrane catches stays in the circuit rather than going back to you.</p>
+          <div class="plate"><img class="ph" src="assets-b/filter-pole.jpg" width="1100" height="1650" alt="The red filtration column on its pole while blood passes through" loading="lazy" decoding="async"></div>
+        </div>
+        <!-- SWAP: step row 4 -->
+        <div class="step reveal" style="--d:.24s">
+          <p class="step-no" aria-hidden="true">04</p>
+          <h3>Oxygen meets blood</h3>
+          <p>Fine tubules inside the membrane carry a medical-grade mix of oxygen and ozone. The gas disperses across the membrane as your blood moves past.</p>
+          <div class="plate"><img class="ph" src="assets-b/canister-bubbling.jpg" width="1200" height="1200" alt="The gas canister bubbling as the oxygen and ozone mixture is prepared" loading="lazy" decoding="async"></div>
+        </div>
+        <!-- SWAP: step row 5 -->
+        <div class="step reveal" style="--d:.32s">
+          <p class="step-no" aria-hidden="true">05</p>
+          <h3>Back to you</h3>
+          <p>Filtered, oxygenated blood returns through the second line. When the pass is complete, lines come out, and most clients head straight back to their day.</p>
+          <div class="plate"><img class="ph" src="assets-b/nurse-hands.jpg" width="1023" height="1299" alt="A gloved nurse managing the return line at a patient's hand" loading="lazy" decoding="async"></div>
+        </div>
+      </div>
+      <!-- SWAP: how-it-works small print -->
+      <p class="how-note">Every circuit is sterile and single-use. Your medical team reviews your health history before any treatment is scheduled.</p>
+    </div>
+  </section>
+
+  <!-- ================= 03 GOALS OVER THE BRIDGE ================= -->
+  <section class="sec scenic" id="goals" aria-labelledby="h-goals">
+    <div class="wrap">
+      <div class="sec-head centered">
+        <p class="kicker reveal"><span class="idx">03</span>The goals</p>
+        <!-- SWAP: goals headline + lede -->
+        <h2 class="reveal" id="h-goals" style="--d:.08s">What clients come&nbsp;pursuing.</h2>
+        <p class="h-lede reveal" style="--d:.16s">EBOO sits inside a bigger picture: testing, hormones, IV therapy, and the rest of a personalized longevity plan. These are the goals clients most often bring to it.</p>
+      </div>
+      <div class="goals">
+        <!-- SWAP: goal plates (8) -->
+        <article class="goal reveal"><span class="caps">G. 01</span><h3>Energy and focus</h3><p>Show up sharper for work, family, and training blocks.</p></article>
+        <article class="goal reveal" style="--d:.06s"><span class="caps">G. 02</span><h3>Recovery and performance</h3><p>Bounce back faster between hard efforts and long weeks.</p></article>
+        <article class="goal reveal" style="--d:.12s"><span class="caps">G. 03</span><h3>Skin and hair quality</h3><p>Support the tissues that show wear first.</p></article>
+        <article class="goal reveal" style="--d:.18s"><span class="caps">G. 04</span><h3>Circulation support</h3><p>Care for the delivery system every other goal depends on.</p></article>
+        <article class="goal reveal"><span class="caps">G. 05</span><h3>Immune system support</h3><p>Give your defenses attention before they demand it.</p></article>
+        <article class="goal reveal" style="--d:.06s"><span class="caps">G. 06</span><h3>A calmer baseline</h3><p>Support a healthy inflammatory response over time.</p></article>
+        <article class="goal reveal" style="--d:.12s"><span class="caps">G. 07</span><h3>Healthy aging</h3><p>Invest in the decade ahead, not just the week ahead.</p></article>
+        <article class="goal reveal" style="--d:.18s"><span class="caps">G. 08</span><h3>Clearer thinking</h3><p>Protect the cognitive edge you built your life on.</p></article>
+      </div>
+      <!-- SWAP: goals footnote -->
+      <p class="goals-note reveal">EBOO is offered for general wellness support. It is not a treatment or cure for any disease or condition, and results vary from person to person. Your consult covers what is realistic for you.</p>
+    </div>
+  </section>
+
+  <!-- ================= 04 WHO + HONESTY ================= -->
+  <section class="sec raised" id="who" aria-labelledby="h-who">
+    <div class="wrap">
+      <div class="who-grid">
+        <div>
+          <p class="kicker reveal"><span class="idx">04</span>The fit</p>
+          <div class="sec-head">
+            <!-- SWAP: who headline + intro -->
+            <h2 class="reveal" id="h-who" style="--d:.08s">Built for people who&nbsp;optimize.</h2>
+            <p class="h-lede reveal" style="--d:.16s">Your doctor checks for disease. We check for optimization. EBOO draws the kind of client who treats health as an asset to manage, not a problem to react to.</p>
+          </div>
+          <div class="who-list">
+            <!-- SWAP: who rows (4) -->
+            <div class="who-row reveal"><span class="caps">W. 1</span><div><h3>Founders and operators</h3><p>Long weeks, travel, and a calendar that punishes downtime. One hour in a chair is an easy trade.</p></div></div>
+            <div class="who-row reveal" style="--d:.08s"><span class="caps">W. 2</span><div><h3>Athletes and hard trainers</h3><p>People who track recovery as carefully as output and want their protocol physician-supervised.</p></div></div>
+            <div class="who-row reveal" style="--d:.16s"><span class="caps">W. 3</span><div><h3>Longevity planners</h3><p>Clients already testing, tracking, and building a plan for the next few decades, not the next few weeks.</p></div></div>
+            <div class="who-row reveal" style="--d:.24s"><span class="caps">W. 4</span><div><h3>People who feel run down</h3><p>If something feels off, start with the free consult. We will talk through your health picture with your physician in the loop, and point you to testing when that is the smarter first step.</p></div></div>
+          </div>
+        </div>
+        <aside class="honesty reveal" style="--d:.2s" aria-labelledby="h-honesty">
+          <p class="caps">Read this first</p>
+          <!-- SWAP: honesty card -->
+          <h3 id="h-honesty">What EBOO is not.</h3>
+          <ul>
+            <li>Not a cure, and not a treatment for any disease. EBOO is a wellness protocol, and we market it as exactly that.</li>
+            <li>Not for everyone. Pregnancy, certain conditions, and certain medications rule it out. Screening comes first, every time.</li>
+            <li>Not a replacement for your physician, your medications, or an emergency room.</li>
+            <li>Not something we will sell you if the consult says it is a poor fit. We would rather keep your trust than book the chair.</li>
+          </ul>
+          <p class="foot">If EBOO is not right for you, we will say so and suggest where to start instead.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FILM BAND ================= -->
+  <section class="film" aria-label="The treatment room">
+    <!-- SWAP: film band photo -->
+    <img class="ph kb" src="assets-b/treatment-room-wide.jpg" width="1920" height="845" alt="A client resting in the recliner while the EBOO loop runs beside the chair" loading="lazy" decoding="async">
+    <div class="film-scrim">
+      <!-- SWAP: film captions -->
+      <p class="caps">The hour itself</p>
+      <p class="caps quiet">Read, nap, or message through it</p>
+    </div>
+  </section>
+
+  <!-- ================= 05 THE VISIT: RAIL ================= -->
+  <section class="sec" id="visit" aria-labelledby="h-visit">
+    <div class="wrap">
+      <div class="visit-head">
+        <div>
+          <p class="kicker reveal"><span class="idx">05</span>Your first visit</p>
+          <!-- SWAP: visit headline -->
+          <h2 class="reveal" id="h-visit" style="--d:.08s">An hour that feels like a&nbsp;break.</h2>
+        </div>
+        <div class="rail-nav reveal" style="--d:.14s">
+          <button class="rail-btn" type="button" data-rail-prev aria-label="Scroll visit steps back">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 2 4 8l6 6"/></svg>
+          </button>
+          <button class="rail-btn" type="button" data-rail-next aria-label="Scroll visit steps forward">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 2l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="rail" data-rail tabindex="0" aria-label="The four steps of your first visit, scrollable">
+        <!-- SWAP: visit card 1 -->
+        <article class="vcard reveal">
+          <div class="plate"><img class="ph" src="assets-b/consult-table.jpg" width="1200" height="1800" alt="A clinician goes through goals and history with a client at the consult table" loading="lazy" decoding="async"></div>
+          <div class="vcard-body"><p class="caps">Step one</p><h3>The free consult</h3><p>Goals, history, medications, and honest fit. A clinician answers everything before anything is booked.</p></div>
+        </article>
+        <!-- SWAP: visit card 2 -->
+        <article class="vcard reveal" style="--d:.07s">
+          <div class="plate"><img class="ph" src="assets-b/iv-arm.jpg" width="1100" height="733" alt="IV placement on a client's arm before the session begins" loading="lazy" decoding="async"></div>
+          <div class="vcard-body"><p class="caps">Step two</p><h3>Screening and setup</h3><p>Vitals, a review of your health picture, then two quick IV placements. Like a standard blood draw, twice.</p></div>
+        </article>
+        <!-- SWAP: visit card 3 -->
+        <article class="vcard reveal" style="--d:.14s">
+          <div class="plate"><img class="ph" src="assets-b/patient-smiling.jpg" width="1400" height="2100" alt="A client relaxing and smiling mid session in the treatment chair" loading="lazy" decoding="async"></div>
+          <div class="vcard-body"><p class="caps">Step three</p><h3>The hour itself</h3><p>The loop runs while you read, nap, or answer messages. Your nurse stays close the whole pass.</p></div>
+        </article>
+        <!-- SWAP: visit card 4 -->
+        <article class="vcard reveal" style="--d:.21s">
+          <div class="plate"><img class="ph" src="assets-b/wrapup-front-desk.jpg" width="1200" height="1800" alt="A client reviews her aftercare notes at the Biohackr Health front desk" loading="lazy" decoding="async"></div>
+          <div class="vcard-body"><p class="caps">Step four</p><h3>Wrap up and plan</h3><p>Lines out, water in hand, clear aftercare notes, and a plan for what, if anything, comes next.</p></div>
+        </article>
+      </div>
+      <!-- SWAP: visit note -->
+      <p class="visit-note">Free consult first, always. It can run the same day as your treatment if you qualify.</p>
+    </div>
+  </section>
+
+  <!-- ================= QUOTE OVER THE SKYLINE ================= -->
+  <section class="sec raised scenic scenic-city quote-sec" aria-labelledby="h-quote">
+    <div class="wrap">
+      <svg class="quote-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false"><path d="M4 15 C4 9 7 5.5 11 4.5 M4 15 a3.4 3.4 0 1 0 3.4 -3.4 M13 15 C13 9 16 5.5 20 4.5 M13 15 a3.4 3.4 0 1 0 3.4 -3.4"/></svg>
+      <h2 id="h-quote" style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)">What clients say</h2>
+      <blockquote class="reveal">
+        <!-- SWAP: pull quote + attribution (real review) -->
+        <p>The massage chairs are the absolute best, the vibe is upscale curated cool, and the nurses are good with the jab.</p>
+      </blockquote>
+      <cite class="reveal" style="--d:.12s">From a client review of our San Francisco clinic</cite>
+    </div>
+  </section>
+
+  <!-- ================= 06 TEAM + OFFER (the light band) ================= -->
+  <section class="sec on-light" id="team" aria-labelledby="h-team">
+    <div class="wrap">
+      <div class="sec-head centered">
+        <p class="kicker reveal"><span class="idx">06</span>Physician-led</p>
+        <!-- SWAP: team headline + lede -->
+        <h2 class="reveal" id="h-team" style="--d:.08s">The team behind the&nbsp;protocol.</h2>
+        <p class="h-lede reveal" style="--d:.16s">Biohackr Health is a medical clinic first. The people supervising your EBOO session built careers in medicine long before longevity was a buzzword.</p>
+      </div>
+      <div class="team-grid">
+        <!-- SWAP: team member 1 -->
+        <article class="member reveal">
+          <div class="medal"><div class="plate"><img class="ph" src="assets-b/team-bluvas.jpg" width="600" height="600" alt="Portrait of Dr. Lori Bluvas" loading="lazy" decoding="async"></div></div>
+          <h3>Dr. Lori Bluvas, MD</h3>
+          <span class="caps">CEO and Co founder</span>
+          <p>Board-certified OB/GYN with over 25 years of experience, specializing in women's longevity and hormone optimization. Advanced training from Brown University.</p>
+        </article>
+        <!-- SWAP: team member 2 -->
+        <article class="member reveal" style="--d:.1s">
+          <div class="medal"><div class="plate"><img class="ph" src="assets-b/team-greenberg.png" width="600" height="600" alt="Portrait of Dr. Lauren Greenberg" loading="lazy" decoding="async"></div></div>
+          <h3>Dr. Lauren Greenberg, MD</h3>
+          <span class="caps">Co owner and Partner</span>
+          <p>Board-certified plastic surgeon trained at Dartmouth, Northwestern, and Stanford. Has run a boutique practice on Stanford's campus since 1999.</p>
+        </article>
+        <!-- SWAP: team member 3 -->
+        <article class="member reveal" style="--d:.2s">
+          <div class="medal"><div class="plate"><img class="ph" src="assets-b/team-habibi.png" width="600" height="600" alt="Portrait of Atousa Habibi" loading="lazy" decoding="async"></div></div>
+          <h3>Atousa Habibi, RN</h3>
+          <span class="caps">Chief Operations Officer</span>
+          <p>Registered nurse with 12+ years in aesthetics and clinical operations, formerly VP at Lookout Health, where her clinics delivered thousands of treatments.</p>
+        </article>
+      </div>
+
+      <div class="offer" id="offer">
+        <div class="offer-card reveal">
+          <div class="offer-main">
+            <!-- SWAP: offer headline + lede -->
+            <h3>Start with a free consult.</h3>
+            <p class="h-lede">Twenty EBOO spots open each month across both clinics. Claim one and your first treatment is 20% off.</p>
+            <ul class="offer-list">
+              <!-- SWAP: offer bullets -->
+              <li>Free consult with a clinician, in person or by phone. No credit card required.</li>
+              <li>20% off your first EBOO treatment when you book through this page.</li>
+              <li>Same protocol, either location: San Francisco Marina or Palo Alto.</li>
+            </ul>
+          </div>
+          <div class="offer-aside">
+            <!-- SWAP: gauge labels -->
+            <svg class="gauge" viewBox="0 0 300 300" aria-label="20 percent off your first treatment, 20 spots each month">
+              <circle class="track" cx="150" cy="150" r="132"/>
+              <circle class="fill" cx="150" cy="150" r="132" pathLength="1"/>
+              <text class="g-big" x="150" y="126" text-anchor="middle" dominant-baseline="middle">20%</text>
+              <text class="g-caps" x="150" y="174" text-anchor="middle">OFF YOUR FIRST TREATMENT</text>
+              <text class="g-caps" x="150" y="200" text-anchor="middle" opacity=".65">20 SPOTS EACH MONTH</text>
+            </svg>
+            <!-- SWAP: offer CTA -->
+            <a class="btn" href="#book">Claim my spot</a>
+            <p class="fine">Offer applies to your first EBOO treatment after a qualifying consult.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GOOGLE REVIEWS ================= -->
+  <section class="sec g-reviews" aria-label="What clients say on Google">
+    <div class="wrap">
+      <p class="stars reveal">From our Google reviews</p>
+      <!-- Live reviews: the SAME GHL/LeadConnector widget the original EBOO page embeds
+           (widget vscbiVBPwkbdhVINAGjF). It pulls the clinic's synced Google reviews and
+           updates automatically as new reviews are written. -->
+      <iframe id="msgsndr_reviews" class="reveal" title="Biohackr Health Google reviews" src="https://backend.leadconnectorhq.com/appengine/reviews/get_widget/vscbiVBPwkbdhVINAGjF" frameborder="0" scrolling="no" loading="lazy"></iframe>
+      <a class="g-link reveal" style="--d:.14s" href="https://www.google.com/search?q=biohackr+health#lrd=0x808581657af64d31:0x1a2a2a9bc73a82fc,1,,," target="_blank" rel="noopener">Read all our reviews on Google</a>
+    </div>
+  </section>
+
+  <!-- ================= BOOKING FINALE ================= -->
+  <section class="book" id="book" aria-labelledby="h-book">
+    <div class="bg" aria-hidden="true">
+      <!-- SWAP: booking background photo (stays under the marine veil) -->
+      <img class="ph" src="assets-b/session-room.jpg" width="1920" height="2880" alt="" loading="lazy" decoding="async">
+    </div>
+    <div class="wrap">
+      <div class="book-grid">
+        <div class="book-copy">
+          <p class="kicker reveal">Book now</p>
+          <!-- SWAP: booking headline + copy -->
+          <h2 class="reveal" id="h-book" style="--d:.08s">Take control of how you age.</h2>
+          <p class="h-lede reveal" style="--d:.16s">This is your moment to get answers, feel supported, and take a real step toward the energized life you want. Start with a free consult, and let us meet you where you are.</p>
+          <!-- SWAP: phone -->
+          <a class="book-tel reveal" style="--d:.22s" href="tel:+16503701588">(650) 370-1588</a>
+          <div class="book-meta reveal" style="--d:.28s">
+            <!-- SWAP: locations + hours -->
+            <div>
+              <p class="caps">San Francisco Marina</p>
+              <p><a href="https://goo.gl/maps/8pzTGUEau1jUC3kdA" target="_blank" rel="noopener" class="addr-link">1877 Union Street<br>San Francisco, CA 94123</a><br>Mon to Fri, 10am to 6pm<br>Sat, 10am to 4pm</p>
+            </div>
+            <div>
+              <p class="caps">Palo Alto</p>
+              <p><a href="https://goo.gl/maps/CsZk6nJtbnXJgPLYA" target="_blank" rel="noopener" class="addr-link">540 Bryant Street<br>Palo Alto, CA 94301</a><br>Mon to Fri, 10:30am to 6pm<br>Sat, 10am to 4pm</p>
+            </div>
+          </div>
+        </div>
+        <!-- SWAP: form action (point at the campaign intake webhook before launch) -->
+        <form class="form-card reveal" style="--d:.14s" action="#" method="post" aria-labelledby="h-form">
+          <h3 id="h-form">Book your free consult</h3>
+          <p class="sub">No credit card required. It takes about 30 seconds.</p>
+          <div class="f-grid">
+            <div class="f-field"><label for="f-first">First name</label><input id="f-first" name="first_name" type="text" autocomplete="given-name" required></div>
+            <div class="f-field"><label for="f-last">Last name</label><input id="f-last" name="last_name" type="text" autocomplete="family-name" required></div>
+            <div class="f-field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="f-field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div class="f-field"><label for="f-loc">Preferred location</label>
+              <select id="f-loc" name="location" required>
+                <option value="" selected disabled>Select</option>
+                <option>San Francisco Marina</option>
+                <option>Palo Alto</option>
+              </select>
+            </div>
+            <div class="f-field"><label for="f-format">In-person or over the phone?</label>
+              <select id="f-format" name="format" required>
+                <option value="" selected disabled>Select</option>
+                <option>In-person</option>
+                <option>Over the phone</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn" type="submit">Book my free consult</button>
+          <p class="f-status" role="status" aria-live="polite"></p>
+          <!-- SWAP: consent line -->
+          <p class="f-note">By submitting this form you agree to be contacted to schedule your appointment. You may opt out at any time.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-legal" style="margin-top:0;border-top:0;padding-top:.4rem">
+      <!-- SWAP: legal small print -->
+      <p>&copy; 2026 Biohackr Health | All Rights Reserved | <a class="pp-link" href="https://www.biohackr.health/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></p>
+      <p>Statements have not been evaluated by the FDA. Results may vary.</p>
+      <p>Services are for general wellness support only, not to diagnose, treat, cure, or prevent any disease.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  document.documentElement.classList.add("js");
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ===== BESPOKE MOTION (safe to delete): the living loop =====
+     Red cells drift inside the diagram plate while the circuit draws itself. */
+  var loop = document.querySelector(".loop-svg");
+  if (loop) {
+    if (reduced || !("IntersectionObserver" in window)) {
+      loop.classList.add("in");
+    } else {
+      var lio = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { loop.classList.add("in"); lio.disconnect(); }
+        });
+      }, { threshold: 0.4 });
+      lio.observe(loop);
+    }
+  }
+  var canvas = document.querySelector(".loop-cells");
+  if (canvas && canvas.getContext && !reduced) {
+    var ctx = canvas.getContext("2d");
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var W = 0, H = 0, cells = [], running = false, rafId = 0, visible = false;
+    var COUNT = 70;
+    function size() {
+      var r = canvas.getBoundingClientRect();
+      W = Math.max(1, Math.round(r.width)); H = Math.max(1, Math.round(r.height));
+      canvas.width = Math.round(W * dpr); canvas.height = Math.round(H * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    function seed() {
+      cells = [];
+      for (var i = 0; i < COUNT; i++) {
+        var depth = Math.random();
+        cells.push({ x: Math.random() * W, y: Math.random() * H, depth: depth,
+          r: 1 + depth * 2.2, v: 7 + depth * 16, amp: 4 + depth * 12,
+          phase: Math.random() * Math.PI * 2, freq: .16 + Math.random() * .26,
+          mint: Math.random() < .07 });
+      }
+    }
+    var last = 0;
+    function tick(ts) {
+      if (!running) return;
+      if (!last) last = ts;
+      var dt = Math.min(.05, (ts - last) / 1000); last = ts;
+      ctx.clearRect(0, 0, W, H);
+      for (var i = 0; i < cells.length; i++) {
+        var c = cells[i];
+        c.x += c.v * dt; c.phase += c.freq * dt;
+        if (c.x - 16 > W) { c.x = -16; c.y = Math.random() * H; }
+        var y = c.y + Math.sin(c.phase * Math.PI * 2) * c.amp;
+        var a = .1 + c.depth * .34;
+        ctx.beginPath();
+        ctx.fillStyle = c.mint ? "rgba(156,211,202," + (a * .8) + ")" : "rgba(224,25,25," + a + ")";
+        ctx.arc(c.x, y, c.r, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      rafId = requestAnimationFrame(tick);
+    }
+    function start() { if (!running && visible && !document.hidden) { running = true; last = 0; rafId = requestAnimationFrame(tick); } }
+    function stop() { running = false; if (rafId) cancelAnimationFrame(rafId); }
+    size(); seed();
+    window.addEventListener("resize", function () { size(); seed(); }, { passive: true });
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { visible = e.isIntersecting; if (visible) { start(); } else { stop(); } });
+      }, { threshold: 0.05 }).observe(canvas);
+    } else { visible = true; start(); }
+    document.addEventListener("visibilitychange", function () { if (document.hidden) { stop(); } else { start(); } });
+  }
+  /* ===== end bespoke motion ===== */
+
+  /* Transform-only reveals */
+  var els = Array.prototype.slice.call(document.querySelectorAll(".reveal"));
+  if (reduced || !("IntersectionObserver" in window)) {
+    els.forEach(function (el) { el.classList.add("in"); });
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { entry.target.classList.add("in"); io.unobserve(entry.target); }
+      });
+    }, { threshold: 0.14, rootMargin: "0px 0px -5% 0px" });
+    els.forEach(function (el) { io.observe(el); });
+  }
+
+  /* Ring gauge draws when seen */
+  var gauge = document.querySelector(".gauge");
+  if (gauge) {
+    if (reduced || !("IntersectionObserver" in window)) { gauge.classList.add("in"); }
+    else {
+      var gio = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) { gauge.classList.add("in"); gio.disconnect(); } });
+      }, { threshold: 0.5 });
+      gio.observe(gauge);
+    }
+  }
+
+  /* Video slots: play only on screen, fade in over the still when actually playing */
+  Array.prototype.forEach.call(document.querySelectorAll(".slot[data-autoplay]"), function (slot) {
+    var v = slot.querySelector("video");
+    if (!v) return;
+    if (reduced) { v.removeAttribute("autoplay"); try { v.pause(); } catch (e) {} return; }
+    v.addEventListener("playing", function () { slot.classList.add("video-live"); });
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (v.hidden || !v.currentSrc) return;
+          if (e.isIntersecting) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+          else { try { v.pause(); } catch (err) {} }
+        });
+      }, { threshold: 0.12 }).observe(slot);
+    } else if (v.currentSrc && !v.hidden) {
+      var p = v.play(); if (p && p.catch) p.catch(function () {});
+    }
+  });
+
+  /* Visit rail arrows */
+  var rail = document.querySelector("[data-rail]");
+  var prev = document.querySelector("[data-rail-prev]");
+  var next = document.querySelector("[data-rail-next]");
+  function railStep(dir) {
+    if (!rail) return;
+    var card = rail.querySelector(".vcard");
+    var step = card ? card.getBoundingClientRect().width + 18 : 320;
+    rail.scrollBy({ left: dir * step, behavior: reduced ? "auto" : "smooth" });
+  }
+  if (prev) prev.addEventListener("click", function () { railStep(-1); });
+  if (next) next.addEventListener("click", function () { railStep(1); });
+
+  /* Header backdrop */
+  var top = document.querySelector(".top");
+  function onScroll() { if (top) top.classList.toggle("scrolled", window.scrollY > 20); }
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  /* Unwired form: honest, never pretends to submit */
+  var form = document.querySelector(".form-card");
+  if (form && form.getAttribute("action") === "#") {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var s = form.querySelector(".f-status");
+      if (s) {
+        s.textContent = "This form is not connected yet. Call (650) 370-1588, or wire the form action to the campaign intake before launch.";
+        s.classList.add("show");
+      }
+    });
+  }
+
+  // GHL reviews widget helper (auto-sizes the #msgsndr_reviews iframe).
+  // Loaded dynamically to keep the page's single-script invariant.
+  var rw = document.createElement("script");
+  rw.src = "https://apisystem.tech/js/reviews_widget.js";
+  rw.defer = true;
+  document.body.appendChild(rw);
+})();
+</script>
+</body>
+</html>
