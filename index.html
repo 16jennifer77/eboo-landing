@@ -260,13 +260,13 @@
 
   /* ---------- 04 who + honesty ---------- */
   .who-grid{display:grid;grid-template-columns:1fr;gap:clamp(2.4rem,5.5vw,5rem);align-items:start}
-  .who-list{margin-top:2rem;border-top:1px solid var(--hair)}
-  .who-row{display:grid;grid-template-columns:56px 1fr;gap:1.3rem;align-items:baseline;
-    padding:1.75rem .2rem;border-bottom:1px solid var(--hair)}
-  .who-row .caps{color:var(--red-bright);font-size:.62rem}
-  .who-row h3{font:600 1rem/1.45 var(--body);color:var(--text)}
-  .who-row p{margin-top:.35rem;font-size:.92rem;line-height:1.68;color:var(--soft);max-width:72ch}
-  .who-row p strong{color:var(--text);font-weight:600}
+  .fit-grid{margin-top:2.4rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:1rem}
+  .fit-card{border:1px solid var(--hair);background:rgba(0,18,40,.5);padding:1.7rem 1.4rem 1.6rem}
+  .fit-card svg{width:27px;height:27px;fill:none;stroke:var(--red-bright);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  .fit-card h3{margin-top:1.1rem;font:600 .98rem/1.4 var(--body);color:var(--text)}
+  .fit-card p{margin-top:.45rem;font-size:.88rem;line-height:1.6;color:var(--soft)}
+  .fit-note{margin:2.2rem auto 0;max-width:74ch;text-align:center;font-size:.8rem;line-height:1.7;color:var(--dim)}
+  .fit-note strong{color:var(--text);font-weight:600}
   .honesty{position:relative;border:1px solid var(--hair-strong);background:rgba(0,18,40,.55);
     padding:clamp(1.8rem,3.4vw,2.6rem)}
   .honesty::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--mint)}
@@ -724,15 +724,31 @@
             <h2 class="reveal" id="h-who" style="--d:.08s">Built for people who&nbsp;optimize.</h2>
             <p class="h-lede reveal" style="--d:.16s">Your doctor checks for disease. We check for optimization. EBOO draws the kind of client who treats health as an asset to manage, not a problem to react to.</p>
           </div>
-          <div class="who-list">
-            <!-- SWAP: who rows (4) -->
-            <div class="who-row reveal"><span class="caps">W. 1</span><div><h3>Founders and operators</h3><p>Long weeks, travel, and a calendar that punishes downtime. One hour in a chair is an easy trade.</p></div></div>
-            <div class="who-row reveal" style="--d:.08s"><span class="caps">W. 2</span><div><h3>Athletes and hard trainers</h3><p>People who track recovery as carefully as output and want their protocol physician-supervised.</p></div></div>
-            <div class="who-row reveal" style="--d:.16s"><span class="caps">W. 3</span><div><h3>Longevity planners</h3><p>Clients already testing, tracking, and building a plan for the next few decades, not the next few weeks.</p></div></div>
-            <div class="who-row reveal" style="--d:.24s"><span class="caps">W. 4</span><div><h3>People who feel run down</h3><p>If something feels off, start with the free consult. We will talk through your health picture with your physician in the loop, and point you to testing when that is the smarter first step.</p></div></div>
-            <!-- SWAP: honest-fit summary row (replaces the "What EBOO is not" card) -->
-            <div class="who-row reveal" style="--d:.32s"><span class="caps">W. 5</span><div><h3>People who want a straight answer</h3><p>EBOO is a wellness protocol, not a cure, and it is not for everyone: pregnancy, certain conditions, and certain medications rule it out, so screening comes first, every time. <strong>If EBOO is not right for you, we will say so and suggest where to start instead.</strong></p></div></div>
+          <div class="fit-grid">
+            <!-- SWAP: fit cards (4) -->
+            <article class="fit-card reveal">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="8" width="16" height="11" rx="2"/><path d="M9 8V6.5A2.5 2.5 0 0 1 11.5 4h1A2.5 2.5 0 0 1 15 6.5V8"/><path d="M4 13h16"/></svg>
+              <h3>Founders and operators</h3>
+              <p>One easy hour inside a punishing calendar.</p>
+            </article>
+            <article class="fit-card reveal" style="--d:.08s">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 12.5h3.5L9 6.5l4.5 11 2.5-5H21"/></svg>
+              <h3>Athletes and hard trainers</h3>
+              <p>Recovery tracked as carefully as output.</p>
+            </article>
+            <article class="fit-card reveal" style="--d:.16s">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 17.5l5.5-5.5 3.5 3.5 7-8"/><path d="M15.5 7.5H19V11"/></svg>
+              <h3>Longevity planners</h3>
+              <p>Planning in decades, not weeks.</p>
+            </article>
+            <article class="fit-card reveal" style="--d:.24s">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="9" width="14" height="7" rx="1.6"/><path d="M20 10.5v4"/><path d="M6.5 11.5v2"/></svg>
+              <h3>People who feel run down</h3>
+              <p>Something feels off? Start with the free consult.</p>
+            </article>
           </div>
+          <!-- SWAP: honest-fit note (condenses the old "What EBOO is not" card) -->
+          <p class="fit-note reveal" style="--d:.2s">Screening comes first, every time: pregnancy, certain conditions, and some medications rule EBOO out. <strong>If EBOO is not right for you, we will say so and suggest where to start instead.</strong></p>
         </div>
       </div>
     </div>
