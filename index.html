@@ -259,13 +259,14 @@
   .goals-note{margin-top:1.5rem;font-size:.8rem;color:var(--dim);max-width:74ch;margin-left:auto;margin-right:auto;text-align:center}
 
   /* ---------- 04 who + honesty ---------- */
-  .who-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2.4rem,5.5vw,5rem);align-items:start}
+  .who-grid{display:grid;grid-template-columns:1fr;gap:clamp(2.4rem,5.5vw,5rem);align-items:start}
   .who-list{margin-top:2rem;border-top:1px solid var(--hair)}
   .who-row{display:grid;grid-template-columns:56px 1fr;gap:1.3rem;align-items:baseline;
-    padding:1.35rem .2rem;border-bottom:1px solid var(--hair)}
+    padding:1.75rem .2rem;border-bottom:1px solid var(--hair)}
   .who-row .caps{color:var(--red-bright);font-size:.62rem}
   .who-row h3{font:600 1rem/1.45 var(--body);color:var(--text)}
-  .who-row p{margin-top:.35rem;font-size:.92rem;line-height:1.68;color:var(--soft)}
+  .who-row p{margin-top:.35rem;font-size:.92rem;line-height:1.68;color:var(--soft);max-width:72ch}
+  .who-row p strong{color:var(--text);font-weight:600}
   .honesty{position:relative;border:1px solid var(--hair-strong);background:rgba(0,18,40,.55);
     padding:clamp(1.8rem,3.4vw,2.6rem)}
   .honesty::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--mint)}
@@ -729,20 +730,10 @@
             <div class="who-row reveal" style="--d:.08s"><span class="caps">W. 2</span><div><h3>Athletes and hard trainers</h3><p>People who track recovery as carefully as output and want their protocol physician-supervised.</p></div></div>
             <div class="who-row reveal" style="--d:.16s"><span class="caps">W. 3</span><div><h3>Longevity planners</h3><p>Clients already testing, tracking, and building a plan for the next few decades, not the next few weeks.</p></div></div>
             <div class="who-row reveal" style="--d:.24s"><span class="caps">W. 4</span><div><h3>People who feel run down</h3><p>If something feels off, start with the free consult. We will talk through your health picture with your physician in the loop, and point you to testing when that is the smarter first step.</p></div></div>
+            <!-- SWAP: honest-fit summary row (replaces the "What EBOO is not" card) -->
+            <div class="who-row reveal" style="--d:.32s"><span class="caps">W. 5</span><div><h3>People who want a straight answer</h3><p>EBOO is a wellness protocol, not a cure, and it is not for everyone: pregnancy, certain conditions, and certain medications rule it out, so screening comes first, every time. <strong>If EBOO is not right for you, we will say so and suggest where to start instead.</strong></p></div></div>
           </div>
         </div>
-        <aside class="honesty reveal" style="--d:.2s" aria-labelledby="h-honesty">
-          <p class="caps">Read this first</p>
-          <!-- SWAP: honesty card -->
-          <h3 id="h-honesty">What EBOO is not.</h3>
-          <ul>
-            <li>Not a cure, and not a treatment for any disease. EBOO is a wellness protocol, and we market it as exactly that.</li>
-            <li>Not for everyone. Pregnancy, certain conditions, and certain medications rule it out. Screening comes first, every time.</li>
-            <li>Not a replacement for your physician, your medications, or an emergency room.</li>
-            <li>Not something we will sell you if the consult says it is a poor fit. We would rather keep your trust than book the chair.</li>
-          </ul>
-          <p class="foot">If EBOO is not right for you, we will say so and suggest where to start instead.</p>
-        </aside>
       </div>
     </div>
   </section>
@@ -800,19 +791,6 @@
       </div>
       <!-- SWAP: visit note -->
       <p class="visit-note">Free consult first, always. It can run the same day as your treatment if you qualify.</p>
-    </div>
-  </section>
-
-  <!-- ================= QUOTE OVER THE SKYLINE ================= -->
-  <section class="sec raised scenic scenic-city quote-sec" aria-labelledby="h-quote">
-    <div class="wrap">
-      <svg class="quote-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false"><path d="M4 15 C4 9 7 5.5 11 4.5 M4 15 a3.4 3.4 0 1 0 3.4 -3.4 M13 15 C13 9 16 5.5 20 4.5 M13 15 a3.4 3.4 0 1 0 3.4 -3.4"/></svg>
-      <h2 id="h-quote" style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)">What clients say</h2>
-      <blockquote class="reveal">
-        <!-- SWAP: pull quote + attribution (real review) -->
-        <p>The massage chairs are the absolute best, the vibe is upscale curated cool, and the nurses are good with the jab.</p>
-      </blockquote>
-      <cite class="reveal" style="--d:.12s">From a client review of our San Francisco clinic</cite>
     </div>
   </section>
 
