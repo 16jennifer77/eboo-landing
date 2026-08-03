@@ -204,7 +204,7 @@
   .what-media{position:relative;margin:0}
   .w-main.slot{width:80%;border:1px solid var(--hair)}
   .w-main .frame-int{aspect-ratio:9/16}
-  .w-over.slot{position:absolute;right:0;bottom:-9%;width:46%;border:1px solid var(--hair-strong);
+  .w-over.slot{position:absolute;right:0;bottom:-9%;width:46%;z-index:3;border:1px solid var(--hair-strong);
     box-shadow:0 28px 64px rgba(0,10,24,.6)}
   .w-over .frame-int{aspect-ratio:9/16}
   .frame-int{position:relative;width:100%}
@@ -470,11 +470,12 @@
     .g-reviews iframe{min-height:0;height:640px !important}
     .top .btn{padding:.7rem .95rem;font-size:.6rem;letter-spacing:.16em;white-space:nowrap}
     .hero{min-height:0}
-    .hero-core{padding:3.3rem 0 2.6rem}
+    .hero-core{padding:2.1rem 0 2.2rem}
     .sec{padding:34px 0}
-    .creds-inner{gap:.18rem .85rem;padding:.5rem .9rem}
-    .creds .caps{font-size:.46rem;letter-spacing:.12em}
-    .creds .tick{width:3px;height:3px}
+    .creds-inner{display:block;padding:.55rem .9rem}
+    .creds .caps{display:block;text-align:center;font-size:.46rem;letter-spacing:.12em;padding:.13rem 0}
+    .creds .tick{display:none}
+    .goals .reveal{transform:none !important;transition:none !important}
     .steps{margin-top:1.5rem}
     .film-scrim .caps{max-width:44%}
     .film-scrim .caps.quiet{text-align:right}
